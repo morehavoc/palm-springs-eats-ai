@@ -52,12 +52,12 @@ const oauthInfo = new OAuthInfo({
 
 IdentityManager.registerOAuthInfos([oauthInfo]);
 
-// --- App Init ---
+// --- DOM refs ---
 const signInOverlay = document.getElementById("sign-in-overlay");
 const signInBtn = document.getElementById("sign-in-btn");
 const mainMap = document.getElementById("main-map");
 const assistantPanel = document.getElementById("assistant-panel");
-const assistantContainer = document.getElementById("assistant-container");
+const assistant = document.getElementById("ps-assistant");
 const mobileFab = document.getElementById("mobile-chat-toggle");
 
 // --- Mobile toggle ---
@@ -85,44 +85,17 @@ async function onSignedIn() {
   signInOverlay.style.display = "none";
   mainMap.style.display = "block";
 
-  // Build the assistant element with ALL agents BEFORE appending to the DOM.
-  // The orchestrator initializes on DOM connection (queueMicrotask in loaded()),
-  // so every agent must be a child before that happens.
-  const assistant = document.createElement("arcgis-assistant");
-  assistant.id = "ps-assistant";
-  assistant.setAttribute("log-enabled", "");
-  assistant.setAttribute("copy-enabled", "");
-  assistant.setAttribute("feedback-enabled", "");
-  assistant.setAttribute("reference-element", "#main-map");
-  assistant.setAttribute("heading", "Palm Springs Eats");
-  assistant.setAttribute(
-    "description",
-    "Ask about restaurants near the Convention Center, or add a new spot you found!"
-  );
-  assistant.setAttribute(
-    "entry-message",
-    "Hey! I know all the best spots to eat near the Palm Springs Convention Center. " +
-      "Ask me about burger joints, walkable lunch spots, or anything else. " +
-      "You can even tell me about a new restaurant and I'll add it to the map! 🌴"
-  );
-
-  // Add built-in agents
-  assistant.appendChild(document.createElement("arcgis-assistant-navigation-agent"));
-  assistant.appendChild(document.createElement("arcgis-assistant-data-exploration-agent"));
-  assistant.appendChild(document.createElement("arcgis-assistant-help-agent"));
-
-  // Add custom restaurant adder agent
-  const customAgent = document.createElement("arcgis-assistant-agent");
-  customAgent.agent = createRestaurantAgent(FEATURE_LAYER_URL, CONVENTION_CENTER);
-  assistant.appendChild(customAgent);
+  // Register the custom agent — built-in agents are already in the HTML,
+  // but custom agents need .agent set before DOM insertion (the orchestrator
+  // reads agent.id on connect, so the property must exist first).
+  const customAgentEl = document.createElement("arcgis-assistant-agent");
+  customAgentEl.agent = createRestaurantAgent(FEATURE_LAYER_URL, CONVENTION_CENTER);
+  assistant.appendChild(customAgentEl);
   console.log("Restaurant Adder agent registered");
 
-  // Wait for the map view to be fully ready before showing the assistant
+  // Wait for the map view to be ready, then show the assistant panel
   mainMap.addEventListener("arcgisViewReadyChange", () => {
     console.log("Map view ready — showing assistant panel");
-
-    // NOW append to DOM — triggers orchestrator initialization with auth + all agents
-    assistantContainer.appendChild(assistant);
 
     // On desktop, show panel inline. On mobile, keep hidden — FAB toggle controls it.
     const isMobile = window.matchMedia("(max-width: 768px)").matches;

@@ -36,15 +36,30 @@
         </arcgis-expand>
       </arcgis-map>
 
-      <!-- Assistant panel — created dynamically in main.js after auth
-           so the orchestrator initializes with all agents + a valid token -->
+      <!-- Assistant panel — built-in agents declared as web components,
+           custom agent registered via JS after auth -->
       <calcite-shell-panel
         slot="panel-end"
         width-scale="l"
         id="assistant-panel"
         style="display: none;"
       >
-        <calcite-panel heading="Palm Springs Eats AI" id="assistant-container">
+        <calcite-panel heading="Palm Springs Eats AI">
+          <arcgis-assistant
+            id="ps-assistant"
+            reference-element="#main-map"
+            heading="Palm Springs Eats"
+            description="Ask about restaurants near the Convention Center, or add a new spot you found!"
+            entry-message="Hey! I know all the best spots to eat near the Palm Springs Convention Center. Ask me about burger joints, walkable lunch spots, or anything else. You can even tell me about a new restaurant and I'll add it to the map! 🌴"
+            log-enabled
+            copy-enabled
+            feedback-enabled
+          >
+            <arcgis-assistant-navigation-agent></arcgis-assistant-navigation-agent>
+            <arcgis-assistant-data-exploration-agent></arcgis-assistant-data-exploration-agent>
+            <arcgis-assistant-help-agent></arcgis-assistant-help-agent>
+            <!-- Custom agent added via JS — .agent must be set before DOM insertion -->
+          </arcgis-assistant>
         </calcite-panel>
       </calcite-shell-panel>
 
