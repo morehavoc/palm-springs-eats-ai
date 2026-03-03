@@ -36,8 +36,8 @@
         </arcgis-expand>
       </arcgis-map>
 
-      <!-- Assistant panel — built-in agents declared as web components,
-           custom agent registered via JS after auth -->
+      <!-- Assistant panel — all agents declared as web components.
+           Custom agent's .agent property set in main.js before lifecycle init. -->
       <calcite-shell-panel
         slot="panel-end"
         width-scale="l"
@@ -58,7 +58,7 @@
             <arcgis-assistant-navigation-agent></arcgis-assistant-navigation-agent>
             <arcgis-assistant-data-exploration-agent></arcgis-assistant-data-exploration-agent>
             <arcgis-assistant-help-agent></arcgis-assistant-help-agent>
-            <!-- Custom agent added via JS — .agent must be set before DOM insertion -->
+            <arcgis-assistant-agent id="custom-agent"></arcgis-assistant-agent>
           </arcgis-assistant>
         </calcite-panel>
       </calcite-shell-panel>

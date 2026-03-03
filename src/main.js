@@ -41,6 +41,13 @@ const FEATURE_LAYER_URL = "https://services8.arcgis.com/KsXZDThvSinzJ3pq/arcgis/
 // Palm Springs Convention Center coordinates
 const CONVENTION_CENTER = { longitude: -116.5453, latitude: 33.8303 };
 
+// --- Register custom agent eagerly ---
+// Must happen synchronously before microtasks process (Lumina lifecycle).
+// The agent object doesn't need auth — FeatureLayer is just a URL reference.
+// Auth is handled by IdentityManager at runtime when applyEdits is called.
+document.getElementById("custom-agent").agent = createRestaurantAgent(FEATURE_LAYER_URL, CONVENTION_CENTER);
+console.log("Restaurant Adder agent assigned");
+
 // --- OAuth Setup ---
 esriConfig.portalUrl = PORTAL_URL;
 
@@ -84,14 +91,6 @@ async function onSignedIn() {
   // Hide sign-in, show map
   signInOverlay.style.display = "none";
   mainMap.style.display = "block";
-
-  // Register the custom agent — built-in agents are already in the HTML,
-  // but custom agents need .agent set before DOM insertion (the orchestrator
-  // reads agent.id on connect, so the property must exist first).
-  const customAgentEl = document.createElement("arcgis-assistant-agent");
-  customAgentEl.agent = createRestaurantAgent(FEATURE_LAYER_URL, CONVENTION_CENTER);
-  assistant.appendChild(customAgentEl);
-  console.log("Restaurant Adder agent registered");
 
   // Wait for the map view to be ready, then show the assistant panel
   mainMap.addEventListener("arcgisViewReadyChange", () => {
