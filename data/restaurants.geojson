@@ -1,0 +1,411 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-116.5538874, 33.8194144] },
+      "properties": {
+        "Name": "Spencer's Restaurant",
+        "Address": "701 W Baristo Rd, Palm Springs, CA 92262",
+        "Category": "american",
+        "PriceRange": "$$$",
+        "WalkingDistance": 0.9,
+        "IsWalkable": 1,
+        "Description": "Four-star American cuisine with French-Pacific Rim influence. Elegant patio dining at the Parker hotel.",
+        "AddedBy": "seed"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-116.546572, 33.832702] },
+      "properties": {
+        "Name": "Jake's",
+        "Address": "664 N Palm Canyon Dr, Palm Springs, CA 92262",
+        "Category": "american",
+        "PriceRange": "$$",
+        "WalkingDistance": 0.6,
+        "IsWalkable": 1,
+        "Description": "Hip, casual American bistro with a lively patio scene on Palm Canyon Drive.",
+        "AddedBy": "seed"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-116.5470949, 33.8287826] },
+      "properties": {
+        "Name": "Tac/Quila",
+        "Address": "150 S Indian Canyon Dr, Palm Springs, CA 92262",
+        "Category": "mexican",
+        "PriceRange": "$$",
+        "WalkingDistance": 0.4,
+        "IsWalkable": 1,
+        "Description": "Michelin-recognized Mexican eatery serving street fare, seafood, meat dishes and craft cocktails.",
+        "AddedBy": "seed"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-116.5440949, 33.8269427] },
+      "properties": {
+        "Name": "The Tropicale Palm Springs",
+        "Address": "330 E Amado Rd, Palm Springs, CA 92262",
+        "Category": "american",
+        "PriceRange": "$$",
+        "WalkingDistance": 0.4,
+        "IsWalkable": 1,
+        "Description": "Inspired by upbeat 1960s-style supper clubs. International cuisine with retro Palm Springs vibes.",
+        "AddedBy": "seed"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-116.5465627, 33.8341451] },
+      "properties": {
+        "Name": "Workshop Kitchen & Bar",
+        "Address": "800 N Palm Canyon Dr, Palm Springs, CA 92262",
+        "Category": "american",
+        "PriceRange": "$$$",
+        "WalkingDistance": 0.7,
+        "IsWalkable": 1,
+        "Description": "Michelin and James Beard recognized. Inventive New American eats and seasonal craft cocktails in a former movie house.",
+        "AddedBy": "seed"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-116.5469483, 33.8345505] },
+      "properties": {
+        "Name": "Eight4Nine Restaurant & Lounge",
+        "Address": "849 N Palm Canyon Dr, Palm Springs, CA 92262",
+        "Category": "american",
+        "PriceRange": "$$$",
+        "WalkingDistance": 0.8,
+        "IsWalkable": 1,
+        "Description": "Contemporary eatery offering refined New American cuisine in a stunning modern space.",
+        "AddedBy": "seed"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-116.546541, 33.81686] },
+      "properties": {
+        "Name": "Johnny Costa's Ristorante",
+        "Address": "440 S Palm Canyon Dr, Palm Springs, CA 92264",
+        "Category": "italian",
+        "PriceRange": "$$",
+        "WalkingDistance": 0.8,
+        "IsWalkable": 1,
+        "Description": "Classic Italian restaurant. A Palm Springs institution for traditional pasta and veal dishes.",
+        "AddedBy": "seed"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-116.5465207, 33.8440303] },
+      "properties": {
+        "Name": "The Heyday",
+        "Address": "1555 N Palm Canyon Dr, Palm Springs, CA 92262",
+        "Category": "burger",
+        "PriceRange": "$$",
+        "WalkingDistance": 1.5,
+        "IsWalkable": 0,
+        "Description": "Casual spot known for solid burgers and a laid-back Uptown atmosphere.",
+        "AddedBy": "seed"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-116.5461046, 33.8042842] },
+      "properties": {
+        "Name": "Bar Cecil",
+        "Address": "1775 E Palm Canyon Dr, Palm Springs, CA 92264",
+        "Category": "american",
+        "PriceRange": "$$",
+        "WalkingDistance": 1.8,
+        "IsWalkable": 0,
+        "Description": "American and French fare in a stylish setting. Great cocktails and weekend brunch.",
+        "AddedBy": "seed"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-116.5472748, 33.8245072] },
+      "properties": {
+        "Name": "Clandestino",
+        "Address": "225 S Palm Canyon Dr, Palm Springs, CA 92262",
+        "Category": "mexican",
+        "PriceRange": "$$",
+        "WalkingDistance": 0.5,
+        "IsWalkable": 1,
+        "Description": "Modern Mexican with creative cocktails and a sleek downtown atmosphere.",
+        "AddedBy": "seed"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-116.5462647, 33.8222078] },
+      "properties": {
+        "Name": "Farm",
+        "Address": "6 La Plaza, Palm Springs, CA 92262",
+        "Category": "american",
+        "PriceRange": "$$$",
+        "WalkingDistance": 0.6,
+        "IsWalkable": 1,
+        "Description": "Intimate, country-chic eatery with farm-to-table Provençal fare, including a beloved breakfast menu.",
+        "AddedBy": "seed"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-116.5457, 33.8230] },
+      "properties": {
+        "Name": "Tyler's Burgers",
+        "Address": "149 S Indian Canyon Dr, Palm Springs, CA 92262",
+        "Category": "burger",
+        "PriceRange": "$",
+        "WalkingDistance": 0.4,
+        "IsWalkable": 1,
+        "Description": "Palm Springs institution since 1996. Old-school walk-up burger stand. Cash-simple menu: burgers, turkey burgers, patty melts, fries. 836+ Yelp reviews.",
+        "AddedBy": "seed"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-116.5490, 33.8337] },
+      "properties": {
+        "Name": "John's Restaurant",
+        "Address": "900 N Palm Canyon Dr, Palm Springs, CA 92262",
+        "Category": "burger",
+        "PriceRange": "$",
+        "WalkingDistance": 0.9,
+        "IsWalkable": 1,
+        "Description": "The 'Heartstopper' burger (bacon, sausage, cheese, fried egg on 1/3-lb patty). Classic American diner with charbroiler. Big portions, local favorite.",
+        "AddedBy": "seed"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-116.5260, 33.8155] },
+      "properties": {
+        "Name": "Smokin' Burgers & Lounge",
+        "Address": "1775 E Palm Canyon Dr, Suite 220, Palm Springs, CA 92264",
+        "Category": "burger",
+        "PriceRange": "$$",
+        "WalkingDistance": 1.3,
+        "IsWalkable": 0,
+        "Description": "The 'Big Wow Burger' — 1 pound, two patties, bacon, avocado, provolone. Won 'Best Burger' in Palm Springs multiple years. Open until midnight.",
+        "AddedBy": "seed"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-116.5470, 33.8275] },
+      "properties": {
+        "Name": "Bongo Johnny's Patio Bar & Grill",
+        "Address": "301 N Palm Canyon Dr, Suite 200, Palm Springs, CA 92262",
+        "Category": "burger",
+        "PriceRange": "$$",
+        "WalkingDistance": 0.4,
+        "IsWalkable": 1,
+        "Description": "'Big Kahuna Burger' (two half-pound patties, double bacon). Gold Canyon Premium Angus Chuck. Famous $7 bottomless champagne brunch.",
+        "AddedBy": "seed"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-116.5505, 33.8395] },
+      "properties": {
+        "Name": "1501 Uptown Gastropub",
+        "Address": "1501 N Palm Canyon Dr, Palm Springs, CA 92262",
+        "Category": "burger",
+        "PriceRange": "$$",
+        "WalkingDistance": 1.3,
+        "IsWalkable": 0,
+        "Description": "'1501 Burger' — 1/2 lb beef, cave-aged cheddar, smoked bacon, brioche bun. Modern gastropub with craft cocktails and mountain-view patio.",
+        "AddedBy": "seed"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-116.5430, 33.8215] },
+      "properties": {
+        "Name": "Blackbook",
+        "Address": "315 E Arenas Rd, Palm Springs, CA 92262",
+        "Category": "burger",
+        "PriceRange": "$$",
+        "WalkingDistance": 0.5,
+        "IsWalkable": 1,
+        "Description": "Voted Best Restaurant in Palm Springs. Angus burger with applewood bacon and hickory sauce. Cocktail bar vibes plus Nashville hot chicken.",
+        "AddedBy": "seed"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-116.5465, 33.8233] },
+      "properties": {
+        "Name": "Zin American Bistro",
+        "Address": "198 S Palm Canyon Dr, Palm Springs, CA 92262",
+        "Category": "american",
+        "PriceRange": "$$$",
+        "WalkingDistance": 0.5,
+        "IsWalkable": 1,
+        "Description": "Wagyu burger with caramelized onions and white cheddar. Truffle fries. 21 consecutive Wine Spectator Awards. Upscale bistro.",
+        "AddedBy": "seed"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-116.5458, 33.8183] },
+      "properties": {
+        "Name": "Tony's Grill & Bar",
+        "Address": "665 S Palm Canyon Dr, Palm Springs, CA 92264",
+        "Category": "burger",
+        "PriceRange": "$$",
+        "WalkingDistance": 0.8,
+        "IsWalkable": 1,
+        "Description": "'Fantasy Burger' (bacon, mushrooms, blue cheese, chipotle mayo). 10+ flavors of fries. Wide burger selection.",
+        "AddedBy": "seed"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-116.5467, 33.8268] },
+      "properties": {
+        "Name": "The Sandwich Spot",
+        "Address": "276 N Palm Canyon Dr, Palm Springs, CA 92262",
+        "Category": "deli",
+        "PriceRange": "$",
+        "WalkingDistance": 0.3,
+        "IsWalkable": 1,
+        "Description": "20+ creative sandwiches on Dutch Crunch or Marble Rye. Ranked #3 of 280 Palm Springs restaurants on TripAdvisor. Fast, perfect for conference lunch.",
+        "AddedBy": "seed"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-116.5408, 33.8240] },
+      "properties": {
+        "Name": "Sherman's Deli & Bakery",
+        "Address": "401 E Tahquitz Canyon Way, Palm Springs, CA 92262",
+        "Category": "deli",
+        "PriceRange": "$$",
+        "WalkingDistance": 0.2,
+        "IsWalkable": 1,
+        "Description": "Classic NYC-style deli. Massive corned beef, pastrami, Reubens. Famous pastries and cakes. Basically next door to the convention center.",
+        "AddedBy": "seed"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-116.5465, 33.8243] },
+      "properties": {
+        "Name": "Maracas Cantina",
+        "Address": "155 S Palm Canyon Dr, Palm Springs, CA 92262",
+        "Category": "mexican",
+        "PriceRange": "$$",
+        "WalkingDistance": 0.4,
+        "IsWalkable": 1,
+        "Description": "Festive Mexican classics, strong margaritas, lively patio. Good group spot in the heart of downtown.",
+        "AddedBy": "seed"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-116.5465, 33.8232] },
+      "properties": {
+        "Name": "Lulu California Bistro",
+        "Address": "200 S Palm Canyon Dr, Palm Springs, CA 92262",
+        "Category": "american",
+        "PriceRange": "$$$",
+        "WalkingDistance": 0.5,
+        "IsWalkable": 1,
+        "Description": "Award-winning California bistro. The 'hippest restaurant in Palm Springs.' 5,600+ Yelp reviews. Great streetside patio and weekend brunch.",
+        "AddedBy": "seed"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-116.5454, 33.8213] },
+      "properties": {
+        "Name": "Rooster and the Pig",
+        "Address": "356 S Indian Canyon Dr, Palm Springs, CA 92262",
+        "Category": "asian",
+        "PriceRange": "$$",
+        "WalkingDistance": 0.6,
+        "IsWalkable": 1,
+        "Description": "Modern Vietnamese. No reservations — lines form at open. Legendary crunchy rolls. One of the most acclaimed restaurants in Palm Springs.",
+        "AddedBy": "seed"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-116.5425, 33.8242] },
+      "properties": {
+        "Name": "Ruben and Ozzy's Oyster Bar & Grill",
+        "Address": "241 E Tahquitz Canyon Way, Palm Springs, CA 92262",
+        "Category": "seafood",
+        "PriceRange": "$$",
+        "WalkingDistance": 0.2,
+        "IsWalkable": 1,
+        "Description": "Fresh oysters, seafood, great cocktails. Very close to the convention center. Great happy hour spot.",
+        "AddedBy": "seed"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-116.5463, 33.8228] },
+      "properties": {
+        "Name": "Las Casuelas Terraza",
+        "Address": "222 S Palm Canyon Dr, Palm Springs, CA 92262",
+        "Category": "mexican",
+        "PriceRange": "$$",
+        "WalkingDistance": 0.5,
+        "IsWalkable": 1,
+        "Description": "Historic Palm Springs Mexican restaurant. Large patio, strong margaritas, tableside guacamole. Accommodates large groups.",
+        "AddedBy": "seed"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-116.5460, 33.8225] },
+      "properties": {
+        "Name": "Sammy G's Tuscan Grill",
+        "Address": "265 S Palm Canyon Dr, Palm Springs, CA 92262",
+        "Category": "italian",
+        "PriceRange": "$$",
+        "WalkingDistance": 0.5,
+        "IsWalkable": 1,
+        "Description": "Italian comfort food with a semi-private room for groups. Good happy hour. Solid choice for group conference dinners.",
+        "AddedBy": "seed"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-116.5392478, 33.8258333] },
+      "properties": {
+        "Name": "Palm Springs Convention Center",
+        "Address": "277 N Avenida Caballeros, Palm Springs, CA 92262",
+        "Category": "venue",
+        "PriceRange": "",
+        "WalkingDistance": 0.0,
+        "IsWalkable": 1,
+        "Description": "Esri Developer Summit 2026 venue. March 10-13.",
+        "AddedBy": "seed"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-116.5453261, 33.8222085] },
+      "properties": {
+        "Name": "Hotel Zoso",
+        "Address": "150 S Indian Canyon Dr, Palm Springs, CA 92262",
+        "Category": "venue",
+        "PriceRange": "",
+        "WalkingDistance": 0.3,
+        "IsWalkable": 1,
+        "Description": "Conference hotel. Walking distance to convention center and downtown restaurants.",
+        "AddedBy": "seed"
+      }
+    }
+  ]
+}

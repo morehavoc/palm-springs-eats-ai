@@ -1,0 +1,114 @@
+/* Palm Springs Eats — Desert theme */
+
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Avenir Next", "Helvetica Neue", sans-serif;
+}
+
+calcite-shell {
+  height: 100%;
+}
+
+arcgis-map {
+  height: 100%;
+  width: 100%;
+}
+
+#assistant-panel {
+  --calcite-shell-panel-width: 420px;
+}
+
+arcgis-assistant {
+  height: 100%;
+}
+
+/* Sign-in overlay */
+#sign-in-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Desert sunset gradient */
+  background: linear-gradient(
+    160deg,
+    #f6d365 0%,
+    #fda085 30%,
+    #e8837c 50%,
+    #a18cd1 80%,
+    #5b5ea6 100%
+  );
+}
+
+#sign-in-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 48px 40px 32px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  max-width: 420px;
+  width: 90%;
+}
+
+#sign-in-emoji {
+  font-size: 48px;
+  margin-bottom: 8px;
+}
+
+#sign-in-card h1 {
+  margin: 0 0 12px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #2b2b2b;
+}
+
+#sign-in-card p {
+  margin: 0 0 28px;
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+#sign-in-footer {
+  margin-top: 20px;
+  font-size: 11px;
+  color: #999;
+}
+
+/* Mobile chat/map toggle FAB */
+#mobile-chat-toggle {
+  display: none;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  #mobile-chat-toggle {
+    display: block;
+  }
+
+  /* On mobile, panel overlays full-screen */
+  #assistant-panel {
+    --calcite-shell-panel-width: 100vw;
+  }
+
+  /* When chat is active on mobile, hide the map and show panel */
+  body.mobile-chat-open #assistant-panel {
+    display: block !important;
+  }
+
+  body.mobile-chat-open arcgis-map {
+    display: none !important;
+  }
+
+  body.mobile-chat-open #mobile-chat-toggle {
+    bottom: 24px;
+  }
+}

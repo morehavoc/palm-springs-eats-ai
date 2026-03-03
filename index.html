@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Palm Springs Eats — Dev Summit 2026</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌴</text></svg>" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <calcite-shell>
+      <!-- Sign-in overlay (shown before auth) -->
+      <div id="sign-in-overlay">
+        <div id="sign-in-card">
+          <div id="sign-in-emoji">🌴🍔</div>
+          <h1>Palm Springs Eats</h1>
+          <p>
+            Find the best restaurants near the Convention Center for
+            Dev Summit 2026. Ask the AI assistant about walkable lunch
+            spots, burger joints, or add your own discoveries.
+          </p>
+          <calcite-button id="sign-in-btn" scale="l" width="full" appearance="solid">
+            Sign in with ArcGIS Online
+          </calcite-button>
+          <div id="sign-in-footer">
+            Built with ArcGIS Maps SDK for JavaScript 5.0 AI Components
+          </div>
+        </div>
+      </div>
+
+      <!-- Map fills the main area — item-id set here so the web map loads as part of init -->
+      <arcgis-map id="main-map" item-id="50e1652604f34d2a91b74fa992f90f00" style="display: none;">
+        <arcgis-zoom position="top-left"></arcgis-zoom>
+        <arcgis-expand position="top-left">
+          <arcgis-legend></arcgis-legend>
+        </arcgis-expand>
+      </arcgis-map>
+
+      <!-- Assistant panel — created dynamically in main.js after auth
+           so the orchestrator initializes with all agents + a valid token -->
+      <calcite-shell-panel
+        slot="panel-end"
+        width-scale="l"
+        id="assistant-panel"
+        style="display: none;"
+      >
+        <calcite-panel heading="Palm Springs Eats AI" id="assistant-container">
+        </calcite-panel>
+      </calcite-shell-panel>
+
+      <!-- Mobile toggle FAB — switches between map and chat -->
+      <calcite-fab
+        id="mobile-chat-toggle"
+        icon="speech-bubble"
+        text="Chat"
+        text-enabled
+        scale="l"
+        appearance="solid"
+        kind="brand"
+      ></calcite-fab>
+    </calcite-shell>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Signing in...</title>
+  </head>
+  <body>
+    <script type="module">
+      import IdentityManager from "https://js.arcgis.com/5.0/@arcgis/core/identity/IdentityManager.js";
+      IdentityManager.setOAuthResponseHash(window.location.hash);
+    </script>
+  </body>
+</html>
